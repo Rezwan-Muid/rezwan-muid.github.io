@@ -22,7 +22,7 @@ author_profile: true
   <p><i>Virginia Tech, Blacksburg, VA, USA</i></p>
   <p><strong style="color:#2a7ae2;">Aug 2023 – Present</strong></p>
   <p><strong>CGPA:</strong> 3.96/4.00</p>
-  <p><strong>Courses:</strong> Blockchain Technologies, Advanced Topics in Systems (Network Security), System and Software Security, Fundamentals of Information Security (Cryptography Focus), Advanced Topics in Data and Information, Advanced Topics in HCI (User Privacy Focus), Ethics and Professionalism in CS, Statistics in Research.</p>
+  <p><strong>Courses:</strong> Blockchain Technologies, Advanced Topics in Systems (Network Security), System and Software Security, Fundamentals of Information Security (Cryptography Focus), Advanced Topics in Data and Information, Advanced Topics in HCI (User Privacy Focus), Ethics and Professionalism in CS, Statistics in Research, Social Computing and CSCW.</p>
   <p><strong>Notable Achievements:</strong></p>
   <ul>
     <li>Invited twice to join the <a href="https://www.provost.vt.edu/phi-kappa-phi.html" target="_blank">Phi Kappa Phi</a> Honor Society — recognizing top 10% of PhD students at Virginia Tech</li>
