@@ -12,7 +12,7 @@ author_profile: true
     border-bottom: none;
   }
   .archive__item-title {
-    color: #4ade80;
+    color: #f97316;
     margin-bottom: 0.5rem;
   }
   i { color: #94a3b8; }
