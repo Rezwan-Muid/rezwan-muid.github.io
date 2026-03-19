@@ -27,7 +27,7 @@ author_profile: true
   <ul>
     <li>Invited twice to join the <a href="https://www.provost.vt.edu/phi-kappa-phi.html" target="_blank">Phi Kappa Phi</a> Honor Society — recognizing top 10% of PhD students at Virginia Tech</li>
     <li>Recipient of the <strong>BitShares Fellowship</strong></li>
-    <li>Recipient of the <strong>Cyber Innovation Scholar</strong> award</li>
+    <li>Recipient of the <strong>2026 CCI Southwest Virginia Cyber Innovation Scholar</strong> award</li>
   </ul>
 </div>
 
