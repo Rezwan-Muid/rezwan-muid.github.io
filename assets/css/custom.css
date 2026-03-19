@@ -133,10 +133,12 @@ hr { border: none !important; border-top: 1px solid #1a2744 !important; }
 /* ── Sidebar — visual only, never touch layout ─────────────────── */
 .sidebar, .sidebar__right { background: transparent !important; }
 
-/* Push avatar down and add gap below it */
-.author__avatar {
-  margin-top: 2rem !important;
-  margin-bottom: 1.25rem !important;
+/* Push avatar down — desktop only (mobile uses table-cell layout) */
+@media screen and (min-width: 1024px) {
+  .author__avatar {
+    margin-top: 2rem !important;
+    margin-bottom: 1.25rem !important;
+  }
 }
 
 /* Avatar: just the orange border + glow, nothing else */
