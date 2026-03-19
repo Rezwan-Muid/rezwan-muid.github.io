@@ -136,40 +136,17 @@ hr { border: none !important; border-top: 1px solid #1a2744 !important; }
   overflow: visible !important;
 }
 
-/* Avatar wrapper — clip to circle */
-.sidebar .author__avatar,
-.author__avatar {
-  text-align: center !important;
-  padding: 0.75rem 0 0.5rem 0 !important;
-}
-
-.author__avatar a,
-.author__avatar span {
-  display: inline-block !important;
-  width: 120px !important;
-  height: 120px !important;
-  border-radius: 50% !important;
-  overflow: hidden !important;
-  border: 3px solid #f97316 !important;
-  box-shadow: 0 0 0 4px rgba(249,115,22,0.12), 0 0 24px rgba(249,115,22,0.22) !important;
-  transition: all 0.35s ease !important;
-}
-
+/* Avatar — circle crop only, no layout changes */
 .author__avatar img {
-  display: block !important;
-  width: 120px !important;
-  height: 120px !important;
-  object-fit: cover !important;
-  object-position: center top !important;
   border-radius: 50% !important;
-  border: none !important;
-  box-shadow: none !important;
+  border: 3px solid #f97316 !important;
+  box-shadow: 0 0 0 4px rgba(249,115,22,0.12), 0 0 22px rgba(249,115,22,0.22) !important;
+  transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+  object-fit: cover !important;
 }
-
-.author__avatar a:hover,
-.author__avatar span:hover {
+.author__avatar img:hover {
   box-shadow: 0 0 0 4px rgba(249,115,22,0.25), 0 0 36px rgba(249,115,22,0.38) !important;
-  transform: scale(1.04) !important;
+  transform: scale(1.03) !important;
 }
 
 .author__content, .author__urls-wrapper {
