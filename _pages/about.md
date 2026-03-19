@@ -10,12 +10,20 @@ redirect_from:
 
 
 
-<!-- ![Illustration of combining vision and language modalities](/images/image_to_text_vis.png){: .align-right width="300px"} -->
-👨🏻‍💻 I'm a third-year PhD student at Virginia Tech co-advised by [Dr. Thang Hoang](https://thanghoang.github.io) and [Dr. Taejoong Chung](https://taejoong.github.io).
+<div class="hero-intro reveal">
+  <p class="lead">I'm a <strong>third-year PhD student</strong> at <a href="https://cs.vt.edu">Virginia Tech</a>, co-advised by <a href="https://thanghoang.github.io">Dr. Thang Hoang</a> and <a href="https://taejoong.github.io">Dr. Taejoong Chung</a>.</p>
+  <p>I work at the intersection of <strong>applied cryptography</strong> and <strong>network security</strong> — building systems that make the internet's trust infrastructure more secure, private, and efficient.</p>
+  <p>My current focus is on <strong>zero-knowledge proofs</strong>, <strong>cryptographic accumulators</strong>, and <strong>multiparty computation</strong> to harden Web PKI and Email PKI.</p>
+</div>
 
-🔬 My research interests are solving real-world network security problems with fancy cryptographic tools.
-
-📚 I'm currently working with fancy crypto protocols like zero-knowledge proofs, multiparty computation, cryptographic accumulators, etc. to make Web PKI and Email PKI more secure and better.
-
+<div class="research-tags reveal reveal-d1">
+  <span class="tag">Zero-Knowledge Proofs</span>
+  <span class="tag">Cryptographic Accumulators</span>
+  <span class="tag">Web PKI</span>
+  <span class="tag">Email PKI</span>
+  <span class="tag">Multiparty Computation</span>
+  <span class="tag">Network Security</span>
+  <span class="tag">Applied Cryptography</span>
+</div>
 
 {% include news.html %}
