@@ -22,8 +22,8 @@ redirect_from:
   <span class="tag">Web PKI</span>
   <span class="tag">Email PKI</span>
   <span class="tag">Multiparty Computation</span>
-  <span class="tag">Network Security</span>
-  <span class="tag">Applied Cryptography</span>
+  <span class="tag">RPKI</span>
+  <span class="tag">DNS Security</span>
 </div>
 
 {% include news.html %}
