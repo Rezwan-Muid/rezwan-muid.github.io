@@ -133,9 +133,10 @@ hr { border: none !important; border-top: 1px solid #1a2744 !important; }
 /* ── Sidebar — visual only, never touch layout ─────────────────── */
 .sidebar, .sidebar__right { background: transparent !important; }
 
-/* Push avatar down so it clears the masthead */
+/* Push avatar down and add gap below it */
 .author__avatar {
-  margin-top: 1.5rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1.25rem !important;
 }
 
 /* Avatar: just the orange border + glow, nothing else */
@@ -155,7 +156,7 @@ hr { border: none !important; border-top: 1px solid #1a2744 !important; }
   border: 1px solid #1a2744 !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
-  margin-left: -1rem !important;
+  margin-left: -2rem !important;
 }
 .author__name {
   font-family: 'Space Grotesk', sans-serif !important;
