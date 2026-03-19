@@ -1,0 +1,380 @@
+/* ============================================================
+   MODERN AESTHETIC REDESIGN — Munshi's Homepage
+   ============================================================ */
+
+/* ---------- Google Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/* ---------- CSS Variables (Light Mode Overrides) ---------- */
+:root {
+  --accent           : #4f46e5;
+  --accent-light     : #818cf8;
+  --accent-gradient  : linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --bg               : #f8f9fc;
+  --surface          : #ffffff;
+  --border           : #e2e8f0;
+  --text-primary     : #1e293b;
+  --text-muted       : #64748b;
+  --radius           : 12px;
+  --shadow-sm        : 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md        : 0 4px 16px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg        : 0 10px 40px rgba(79,70,229,0.10), 0 4px 12px rgba(0,0,0,0.06);
+  --transition       : all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------- Base ---------- */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  background-color: var(--bg) !important;
+  color: var(--text-primary) !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  transition: var(--transition) !important;
+}
+a:hover {
+  color: #3730a3 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif !important;
+  color: var(--text-primary) !important;
+  letter-spacing: -0.02em;
+}
+
+p {
+  line-height: 1.75 !important;
+  color: var(--text-primary) !important;
+}
+
+/* ---------- Masthead (Top Nav) ---------- */
+.masthead {
+  background: rgba(255,255,255,0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--border) !important;
+  box-shadow: 0 1px 12px rgba(0,0,0,0.06) !important;
+}
+
+.masthead__inner-wrap {
+  padding: 0 1.5rem !important;
+}
+
+.site-title {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  background: var(--accent-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  letter-spacing: -0.02em !important;
+}
+
+.greedy-nav a {
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  color: var(--text-muted) !important;
+  padding: 0.4rem 0.75rem !important;
+  border-radius: 8px !important;
+  transition: var(--transition) !important;
+}
+
+.greedy-nav a:hover,
+.greedy-nav .nav__item a.active {
+  color: var(--accent) !important;
+  background: rgba(79,70,229,0.08) !important;
+  -webkit-text-fill-color: var(--accent) !important;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  background: transparent !important;
+}
+
+.author__avatar img {
+  border-radius: 50% !important;
+  border: 3px solid transparent !important;
+  background: var(--accent-gradient) !important;
+  background-origin: border-box !important;
+  box-shadow: 0 0 0 3px white, 0 0 0 6px #4f46e5 !important;
+  transition: var(--transition) !important;
+}
+.author__avatar img:hover {
+  transform: scale(1.04) !important;
+  box-shadow: 0 0 0 3px white, 0 0 0 6px #7c3aed, var(--shadow-lg) !important;
+}
+
+.author__name {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+  color: var(--text-primary) !important;
+  letter-spacing: -0.02em !important;
+}
+
+.author__bio {
+  font-size: 0.85rem !important;
+  color: var(--text-muted) !important;
+  line-height: 1.6 !important;
+}
+
+.author__urls-wrapper .author__urls {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow-md) !important;
+  padding: 0.5rem 0 !important;
+}
+
+.author__urls li a {
+  font-size: 0.82rem !important;
+  color: var(--text-muted) !important;
+  padding: 0.35rem 1rem !important;
+  transition: var(--transition) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+.author__urls li a:hover {
+  color: var(--accent) !important;
+  background: rgba(79,70,229,0.06) !important;
+  -webkit-text-fill-color: var(--accent) !important;
+}
+
+.author__desktop {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow-sm) !important;
+  padding: 1.25rem 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* ---------- Page Content ---------- */
+#main {
+  background: transparent !important;
+}
+
+.page__content {
+  font-size: 0.95rem !important;
+}
+
+.page__title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  background: var(--accent-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* ---------- About / Home page ---------- */
+.page__content > p:first-of-type {
+  font-size: 1rem !important;
+}
+
+/* ---------- Cards (Education, Work, etc.) ---------- */
+.archive__item {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow-sm) !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.25rem !important;
+  transition: var(--transition) !important;
+  border-bottom: none !important;
+}
+
+.archive__item:hover {
+  box-shadow: var(--shadow-lg) !important;
+  border-color: rgba(79,70,229,0.25) !important;
+  transform: translateY(-2px) !important;
+}
+
+.archive__item-title {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: var(--accent) !important;
+  margin-bottom: 0.5rem !important;
+  letter-spacing: -0.01em !important;
+}
+
+.archive__item-excerpt {
+  font-size: 0.875rem !important;
+  color: var(--text-muted) !important;
+  line-height: 1.7 !important;
+}
+
+/* ---------- Education & Work page cards ---------- */
+div.archive__item h2.archive__item-title {
+  background: var(--accent-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-size: 1.1rem !important;
+}
+
+/* ---------- News Section ---------- */
+table.news-table,
+.news-table {
+  border: none !important;
+  background: transparent !important;
+}
+
+.news-section {
+  margin-top: 2rem !important;
+}
+
+.news-section h2 {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: var(--text-muted) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 2px solid var(--border) !important;
+}
+
+/* ---------- Inline color overrides for Education/Work dates ---------- */
+strong[style*="color:#2a7ae2"] {
+  color: var(--accent) !important;
+}
+
+/* ---------- Footer ---------- */
+.page__footer {
+  background: var(--surface) !important;
+  border-top: 1px solid var(--border) !important;
+  color: var(--text-muted) !important;
+  font-size: 0.8rem !important;
+  box-shadow: 0 -1px 12px rgba(0,0,0,0.04) !important;
+}
+
+.page__footer a {
+  color: var(--accent) !important;
+}
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: var(--text-muted) !important;
+  transition: var(--transition) !important;
+}
+
+.page__footer-follow .social-icons a:hover .svg-inline--fa {
+  color: var(--accent) !important;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  transition: var(--transition) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.btn--primary,
+.btn.btn--primary {
+  background: var(--accent-gradient) !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.btn--primary:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #c7d2fe; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ---------- Selection ---------- */
+::selection {
+  background: rgba(79,70,229,0.18);
+  color: var(--text-primary);
+}
+
+/* ---------- Smooth page load ---------- */
+body {
+  animation: fadeInPage 0.4s ease-in-out both;
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+/* ---------- Horizontal rule ---------- */
+hr {
+  border: none !important;
+  border-top: 1px solid var(--border) !important;
+  margin: 1.5rem 0 !important;
+}
+
+/* ---------- Code blocks ---------- */
+code, pre {
+  font-size: 0.85em !important;
+  border-radius: 8px !important;
+}
+
+pre {
+  background: #1e1e2e !important;
+  color: #cdd6f4 !important;
+  border: none !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+code {
+  background: rgba(79,70,229,0.08) !important;
+  color: var(--accent) !important;
+  padding: 0.15em 0.45em !important;
+}
+
+/* ---------- Tables ---------- */
+table {
+  border-radius: var(--radius) !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow-sm) !important;
+  border: 1px solid var(--border) !important;
+  font-size: 0.875rem !important;
+}
+
+thead {
+  background: var(--accent-gradient) !important;
+  color: white !important;
+}
+
+thead th {
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 1rem !important;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(79,70,229,0.03) !important;
+}
+
+tbody td {
+  padding: 0.65rem 1rem !important;
+  border-top: 1px solid var(--border) !important;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 768px) {
+  .page__title {
+    font-size: 1.5rem !important;
+  }
+  .archive__item {
+    padding: 1rem !important;
+  }
+}
