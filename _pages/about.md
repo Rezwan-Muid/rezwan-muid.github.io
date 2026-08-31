@@ -11,7 +11,7 @@ redirect_from:
 
 
 <div class="hero-intro reveal">
-  <p class="lead">I'm a <strong>third-year PhD student</strong> at <a href="https://cs.vt.edu">Virginia Tech</a>, co-advised by <a href="https://thanghoang.github.io">Dr. Thang Hoang</a> and <a href="https://taejoong.github.io">Dr. Taejoong Chung</a>.</p>
+  <p class="lead">I'm a <strong>fourth-year PhD student</strong> at <a href="https://cs.vt.edu">Virginia Tech</a>, co-advised by <a href="https://thanghoang.github.io">Dr. Thang Hoang</a> and <a href="https://taejoong.github.io">Dr. Taejoong Chung</a>.</p>
   <p>My current focus is on hardening <strong>Web PKI</strong>, <strong>Resource PKI</strong>, <strong>Email PKI</strong>, and <strong>DNS</strong> using <strong>zero-knowledge proofs</strong>, <strong>cryptographic accumulators</strong>, <strong>multiparty computation</strong>, and other cryptographic tools.</p>
 </div>
 
